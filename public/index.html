@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>test</title>
+		<script type="text/javascript" src="/libs/three.min.js"></script>
+		<script type="text/javascript" src="/libs/OrbitControls.js"></script>
+
+		<script type="text/javascript" src="/libs/paper-core.min.js"></script>
+		<link rel="stylesheet" href="/css/style.css" />
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"
+			charset="utf-8"
+		></script>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"
+			charset="utf-8"
+		></script>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"
+			charset="utf-8"
+		></script>
+
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+		<!--MAPBOX-->
+		<script src="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js"></script>
+		<link
+			href="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css"
+			rel="stylesheet"
+		/>
+		<link href="/css/site.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<table>
+			<tr>
+				<td>
+					<div id="reactControls" class="ReactControllerComp"></div>
+				</td>
+				<div id="reactapp">
+					<td>
+						<h1 style="color: white; text-align: center">MAP Interfaces</h1>
+						<div
+							id="mapView"
+							style="width: 500px; height: 500px; display: block"
+							class="ReactControllerComp"
+						></div>
+					</td>
+					<td>
+						<h1 style="color: white; text-align: center">3d Interfaces</h1>
+						<div id="container" class="ReactControllerComp">
+							<div id="div3d" style="display: block"></div>
+						</div>
+					</td>
+				</div>
+			</tr>
+		</table>
+		<script src="/src/initMap.js"></script>
+		<script src="/src/init3d.js"></script>
+		<script>
+			init3d();
+			// initMap();
+		</script>
+		<script type="text/babel" src="/src/reactComponents/Slider.js"></script>
+		<script
+			type="text/babel"
+			src="/src/reactComponents/districtComp.js"
+		></script>
+		<script
+			type="text/babel"
+			src="/src/reactComponents/partitionComp.js"
+		></script>
+		<script
+			type="text/babel"
+			src="/src/reactComponents/activityComp.js"
+		></script>
+		<script
+			type="text/babel"
+			src="/src/reactComponents/massingComp.js"
+		></script>
+		<script
+			type="text/babel"
+			src="/src/reactComponents/reactControls.js"
+		></script>
+		<!-- <script type="text/babel" src="/src/reactComponents/RHS.js"></script> -->
+	</body>
+</html>

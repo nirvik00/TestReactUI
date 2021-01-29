@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+* {
+	font-family: 'Roboto', sans-serif;
+}
+body {
+	background: #20232a;
+}
+.container h1 {
+	color: rgb(97, 218, 251);
+	font-size: 5em;
+	font-weight: lighter;
+	text-align: center;
+}
+.container {
+	/* max-width: 600px; */
+	margin: 0 auto;
+	padding: 25px;
+}
+.container > p {
+	color: #fff;
+}
+.ReactControllerComp {
+	margin: 50px auto;
+	background: #000;
+	border-radius: 12px;
+	padding: 50px;
+	color: #8a8888;
+}
+.ReactControllerComp h2 {
+	margin: 10 10 10 10px;
+	text-align: center;
+	font-size: 2.5em;
+	font-weight: normal;
+}
+.ReactControllerComp button {
+	font-size: 2em;
+	background: #20232a;
+	color: rgb(26, 187, 223);
+	border: none;
+	padding: 15px;
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+	cursor: pointer;
+	display: block;
+	border-radius: 12px;
+	transition: 0.3s;
+}
+.ReactControllerComp button:hover {
+	color: rgb(255, 0, 0);
+	background: rgb(66, 66, 66);
+}
+.ReactControllerComp a {
+	font-size: 1em;
+	text-align: center;
+	margin: 0 0 25px;
+	color: #ffffff;
+}

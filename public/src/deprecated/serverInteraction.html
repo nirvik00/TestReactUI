@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<title>ServerInteraction</title>
+	</head>
+	<body>
+		<div id="serverDBFunc">
+			<script type="text/javascript" src="/src/funcDB.js"></script>
+			<p>Enter fname, lanme and submit to server</p>
+			<form id="form">
+				<input type="text" id="fname" />
+				<input type="text" id="lname" />
+				<input type="submit" value="Submit" />
+			</form>
+			<script>
+				const form = document.querySelector('form');
+				form.addEventListener('submit', (e) => {
+					e.preventDefault();
+					const fname = document.querySelector('#fname').value;
+					const lname = document.querySelector('#lname').value;
+					const user = { fname: fname, lname: lname };
+					postdata(user);
+				});
+				getData();
+			</script>
+		</div>
+	</body>
+</html>

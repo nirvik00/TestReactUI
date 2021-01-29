@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>test</title>
+		<script type="text/javascript" src="/libs/three.min.js"></script>
+		<script type="text/javascript" src="/libs/OrbitControls.js"></script>
+
+		<script type="text/javascript" src="/libs/paper-core.min.js"></script>
+		<link rel="stylesheet" href="/css/style.css" />
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"
+			charset="utf-8"
+		></script>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"
+			charset="utf-8"
+		></script>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"
+			charset="utf-8"
+		></script>
+
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+		<!--MAPBOX-->
+		<link
+			href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css"
+			rel="stylesheet"
+		/>
+		<link href="/css/site.css" rel="stylesheet" />
+		<script src="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js"></script>
+	</head>
+	<body>
+		<div id="map"></div>
+		<script
+			type="text/babel"
+			src="/src/reactComponents/mapboxReact.js"
+			renderMapbox();
+		></script>
+
+		<div id="div2d" hidden>
+			<canvas
+				id="div2dNineSq"
+				class="draw2d"
+				width="400"
+				height="400"
+				style="border: 1px solid black"
+			></canvas>
+		</div>
+		<script type="text/javascript" src="/src/func2d.js"></script>
+		<script type="text/javascript">
+			DATA = {
+				L: 1,
+				W: 3,
+				H: 1,
+			};
+		</script>
+	</body>
+</html>
